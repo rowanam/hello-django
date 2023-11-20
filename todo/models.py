@@ -5,6 +5,6 @@ class Item(models.Model):
     name = models.CharField(max_length=50, null=False, blank=False)
     done = models.BooleanField(null=False, blank=False, default=False)
 
-    def __str__(self):
+    def __str__(self):  # pylint: disable=invalid-str-returned
         return self.name
     
